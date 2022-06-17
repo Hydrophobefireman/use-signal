@@ -8,6 +8,7 @@
     "rootDir": ".",
     "strictNullChecks": true,
     "resolveJsonModule": true,
+    "strict": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,

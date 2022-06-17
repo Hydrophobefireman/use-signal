@@ -1,23 +1,27 @@
-# NPM Package Gen
+# use-signal
 
-A very simple template to create NPM libraries with subpackages without worrying about it
+simple hook to create and dispatch events across a react like app
 
-## Usage
+# Usage
 
-Clone this repo
+```ts
+// signal.ts
+import {createSignal} from "use-signal";
 
-To generate a package
+export const signal = createSignal(); // or createSignal("name");
 
+// App.ts
+
+import {signal} from "./signal";
+import {useSignal} from "use-signal/react";
+function App() {
+  useSignal(signal, callback);
+  //...
+}
+// somewhere else
+
+import {dispatchSignal} from "use-signal";
+import {signal} from "./signal";
+
+dispatchSignal(signal); // callback is called in App.ts
 ```
-yarn create-package YOUR_PACKAGE
-```
-
-And you will have a subpackage created in the `packages` directory
-
-To use the code from the main module you'll have to setup your `tsconfig.json`
-
-When you build, this will run microbundle on all the subpackages and before publishing it will copy them to the root, so npm only sees your subpackage output
-
-Your dependencies, peer dependencies will be handled for you
-
-( Change the `replace-me` in your package.json and tsconfig.json to your library's name )

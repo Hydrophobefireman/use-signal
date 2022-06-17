@@ -9,9 +9,9 @@ export function useSignal<T = any>(
   const ref = useRef(listener);
   ref.current = listener;
   useEffect(() => {
-    function cb(e: CustomEvent<T>) {
+    const cb = function cb(e: CustomEvent<T>) {
       ref.current?.(e);
-    }
+    } as EventListener;
     window.addEventListener(signal.name, cb);
     return () => window.removeEventListener(signal.name, cb);
   }, []);
