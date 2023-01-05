@@ -1,4 +1,4 @@
-import {random} from "./util";
+import {random} from "./util.js";
 
 export interface Signal {
   name: string;
