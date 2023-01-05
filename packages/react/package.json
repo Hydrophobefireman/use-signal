@@ -1,6 +1,6 @@
 {
   "name": "react",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "private": true,
   "main": "src/index.js",
   "module": "src/index.js",
@@ -9,7 +9,7 @@
   "scripts": {},
   "type": "module",
   "peerDependencies": {
-    "@hydrophobefireman/ui-lib": "^1.21.4",
-    "react": "^18.2.0"
+    "@hydrophobefireman/ui-lib": "latest",
+    "react": "latest"
   }
 }

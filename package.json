@@ -1,7 +1,7 @@
 {
   "name": "use-signal",
   "description": "",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "license": "MIT",
   "type": "module",
   "homepage": "https://github.com/@hydrophobefireman/use-signal#readme",
@@ -28,16 +28,16 @@
   },
   "sideEffects": false,
   "peerDependencies": {
-    "@hydrophobefireman/ui-lib": "^1.21.4",
-    "react": "^18.2.0"
+    "@hydrophobefireman/ui-lib": "latest",
+    "react": "latest"
   },
   "devDependencies": {
-    "@types/node": "^17.0.23",
-    "@types/react": "^18.0.14",
-    "husky": "^7.0.4",
-    "prettier": "^2.6.2",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.1",
     "pretty-quick": "^3.1.3",
-    "typescript": "^4.6.3"
+    "typescript": "^4.9.4"
   },
   "libBase": {
     "exports": {
